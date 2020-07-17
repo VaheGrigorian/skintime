@@ -1,6 +1,0 @@
-Webapp CI
-
-on:
-  push:
-    branches:
-      - master
