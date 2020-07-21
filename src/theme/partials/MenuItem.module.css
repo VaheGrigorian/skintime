@@ -1,0 +1,40 @@
+.menu-item {
+  position: relative;
+  display: block;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+  letter-spacing: 1px;
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item > span,
+a {
+  display: block;
+  padding: 1em 1em 1em 1.2em;
+}
+.menu-item > .menu {
+  display: none;
+  transition: display 0.5s;
+}
+.menu-item:hover > .menu {
+  display: block;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #353030;
+}
+
+.menu-item:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.menu-item:hover > a {
+  color: #fff;
+}

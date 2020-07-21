@@ -1,0 +1,8 @@
+.section {
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #e1e3df;
+  border-bottom-color: #cbccc9;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+}

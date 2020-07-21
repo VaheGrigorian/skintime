@@ -1,13 +1,10 @@
 import React from "react";
 import { useField } from "formik";
-import styled from "styled-components";
 
-const Textarea = styled.textarea``;
+import "../theme/partials/Input.module.css";
 
-export const FormikTextarea = (props) => {
+export default (props) => {
   const [field] = useField(props);
 
-  return <Textarea {...field} {...props} />;
+  return <textarea className="input" {...field} {...props} />;
 };
-
-export default Textarea;

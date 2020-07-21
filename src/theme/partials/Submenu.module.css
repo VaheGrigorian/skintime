@@ -1,0 +1,51 @@
+.submenu {
+  max-width: 90%;
+}
+.submenu h4 {
+  color: #444;
+  margin: 0;
+  padding: 0.4rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.submenu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.submenu li {
+  transform: scaleY(0);
+  opacity: 0;
+  height: 0;
+  transition: height 250ms cubic-bezier(.64,0,.13,1), opacity 150ms ease-out, transform 150ms ease-out 10ms;
+  list-style-type: none;
+  padding: 0;
+}
+
+.submenu.toggled li {
+  transform: scaleY(1);
+  opacity: 1;
+  height: 100%;
+}
+
+.submenu::after {
+  content: "+";
+  position: absolute;
+  color: black;
+  top: 0.4rem;
+  right: 0.5rem;
+}
+
+.submenu.toggled::after {
+  content: "-";
+}
+
+
+
+@media only screen and (min-width: 1050px) {
+  .submenu li {
+    transform: scaleY(1);
+    height: 100%;
+  }
+}

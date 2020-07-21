@@ -1,0 +1,42 @@
+.banner {
+  position: absolute;
+}
+
+.animated {
+  composes: banner;
+}
+
+.animated h2 {
+  animation-delay: 1s;
+}
+
+.animated h4 {
+  animation-delay: 1.2s;
+}
+
+.animated img,
+.animated h4,
+.animated h2,
+.animated a {
+  animation-name: fadeInOut;
+  animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  33.333% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

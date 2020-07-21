@@ -1,0 +1,39 @@
+/* nav-menu are applied to a li items of navs */
+.navMenu {
+  position: relative;
+  padding: 0.6em;
+}
+
+.navMenu:before,
+.navMenu:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  margin: 2px 0 0;
+  transition-duration: 0.2s;
+  opacity: 0;
+  background-color: var(--nav-menu-color);
+}
+
+.navMenu:hover::before,
+.navMenu:hover::after {
+  width: 50%;
+  opacity: 1;
+}
+
+.navMenu::before {
+  left: 50%;
+}
+
+.navMenu::after {
+  right: 50%;
+}
+
+.navMenu a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--nav-menu-color);
+  font-weight: bolder;
+}

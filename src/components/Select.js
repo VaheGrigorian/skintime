@@ -1,13 +1,14 @@
 import React from "react";
 import { useField } from "formik";
-import styled from "styled-components";
 
-const Select = styled.select``;
+import "../theme/partials/Select.module.css";
 
-export const FormikSelect = (props) => {
+export default (props) => {
   const [field] = useField(props);
 
-  return <Select {...field} {...props} />;
+  return (
+    <p className="input-wrapper">
+      <select className="input" {...field} {...props} />
+    </p>
+  );
 };
-
-export default Select;

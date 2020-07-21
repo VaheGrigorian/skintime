@@ -1,0 +1,26 @@
+div[role="group"] {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: 0;
+  margin-bottom: 0.6em;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  div[role="group"] {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  div[role="group"] > * {
+    margin: 0 6px;
+  }
+  div[role="group"] > input:first-child,
+  div[role="group"] > select:first-child,
+  div[role="group"] > button:first-child,
+  div[role="group"] > input:last-child,
+  div[role="group"] > select:last-child,
+  div[role="group"] > button:last-child {
+    margin: 0;
+  }
+}

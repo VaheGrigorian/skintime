@@ -1,0 +1,47 @@
+.input-wrapper {
+  margin-top: 0;
+  margin-bottom: 0.6em;
+}
+.input {
+  padding-left: 12px;
+  transition: var(--input-border-transition);
+  box-shadow: var(--input-box-shadow);
+  box-sizing: border-box;
+  display: flex;
+  font-family: inherit;
+  font-size: 16px;
+  width: 100%;
+  border-radius: var(--input-border-radius);
+  background: var(--input-background);
+  border: 1px solid var(--input-border-color);
+  color: var(--input-color);
+  text-indent: 0.01px;
+  text-overflow: "";
+  cursor: pointer;
+  text-transform: none;
+}
+
+.input:hover {
+  border-color: var(--input-border-color-hover);
+  box-shadow: var(--input-box-shadow-hover);
+}
+
+input.input,
+select.input {
+  height: var(--input-height);
+}
+
+.input input:focus,
+.input select:focus {
+  border-color: var(--input-border-color-focus);
+  outline: 0;
+}
+
+.input + .error {
+  color: red;
+}
+
+.rounded {
+  composes: input;
+  border-radius: var(--input-rounded-border-radius);
+}

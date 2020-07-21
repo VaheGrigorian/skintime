@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-export default styled.fieldset`
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  border: 0;
-`;
+import "../theme/partials/Fieldset.module.css";
+
+export default ({ row, ...props }) => (
+  <div role="group" className={row ? "row" : ""} {...props} />
+);

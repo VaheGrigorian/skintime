@@ -1,0 +1,9 @@
+.uploader {
+  height: 160px;
+  width: 80%;
+  border: 1px dashed grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

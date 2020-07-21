@@ -1,0 +1,62 @@
+aside {
+  position: fixed;
+  height: 100%;
+  box-sizing: border-box;
+  width: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+aside > button {
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid var(--input-border-color);
+  border-left: none;
+  padding: 0.8em 1em 0.8em 1.2em;
+  margin: 0;
+  min-width: 0;
+  outline: 0;
+}
+
+aside > nav {
+  padding-top: 3em;
+  background-color: var(--bg-sidebar);
+  height: 100%;
+  overflow: auto;
+}
+
+aside > nav > ul li {
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+aside.open {
+  width: 90%;
+  max-width: 14em;
+}
+
+aside.open > nav {
+  padding-top: 3em;
+}
+
+aside.open > button {
+  background-color: var(--bg-sidebar);
+  right: -4em;
+}
+
+@media only screen and (min-width: 768px) {
+  aside {
+    height: 100%;
+    width: 10em;
+  }
+  aside > button {
+    display: none;
+  }
+
+  aside > nav {
+    overflow: visible;
+  }
+
+  .menu-item > .menu {
+    position: absolute;
+    top: 0;
+    left: 101%;
+  }
+}

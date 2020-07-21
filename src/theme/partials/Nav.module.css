@@ -1,0 +1,19 @@
+nav {
+  font-size: 13px;
+  font-weight: 400;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+  padding: 0.4rem;
+  display:inline-block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1050px) {
+  nav {
+    flex-direction: row;
+  }
+}

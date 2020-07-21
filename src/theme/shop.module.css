@@ -1,0 +1,22 @@
+:root {
+  /* MENU */
+  --input-height: 36px;
+  --input-color: #222222;
+
+  --input-border-radius: 12px;
+  --input-rounded-border-radius: 24px;
+  --input-border-color: rgba(34, 34, 34, 0.15);
+  --input-border-color-hover: rgba(34, 34, 34, 0.5);
+  --input-border-color-focus: #222222;
+
+  --input-box-shadow: 0 1px 6px 0 rgba(34, 34, 34, 0.15);
+  --input-box-shadow-hover: 0 1px 12px 0 rgba(34, 34, 34, 0.2);
+
+  --input-background: #ffffff;
+
+  --input-border-transition: border-color 200ms ease-out,
+    box-shadow 200ms ease-out;
+
+  /* MENU */
+  --nav-menu-color: rgb(0, 0, 0);
+}
